@@ -2,7 +2,6 @@ package peaksoft.service;
 
 import peaksoft.model.User;
 
-import java.sql.SQLException;
 import java.util.List;
 
 public interface UserService {
@@ -15,8 +14,8 @@ public interface UserService {
 
     void removeUserById(long id);
 
-    List<User> getAllUsers() throws Exception;
+    List<User> getAllUsers();
 
     void cleanUsersTable();
-}
 
+}
